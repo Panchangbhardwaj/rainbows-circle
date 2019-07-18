@@ -1,0 +1,24 @@
+let xd = 0;
+
+function setup() {
+  createCanvas(1000, 1000);
+  background(250);
+
+
+}
+
+function draw() {
+
+
+
+  xd = random(mouseX - 200, mouseX + 200);
+  fill(mouseX, mouseY, random(300));
+
+     yd=mouseY+pow((10000-pow((xd-mouseX),2)),1/2);
+     ellipse(xd,yd,5,5);
+  yd=mouseY-pow((10000-pow((xd-mouseX),2)),1/2);
+     ellipse(xd,yd,5,5);
+
+
+
+}
